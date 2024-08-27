@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype kalkulator</title>
+    <style>
+        button {
+            margin: 2px;
+        }
+        body{
+            background-color: rgb(75, 75, 75);
+        }
+        h1{
+            text-align: center;
+            color: azure;
+        }
+
+        /* @media(max-width: 600px){
+            #wadah{
+                
+            }
+        } */
+    </style>
+
+</head>
+<body >
+<div id="wadah" style="display: flex; justify-content: center; width: 100%; flex-direction: column; align-items: center;">
+    <h1 style="text-align: center;">Kalkulator Lanjutan</h1>
+    <div class="container" style="background-color: rgb(176, 184, 192); border: 8px; border-radius: 4px; width: 20rem; overflow: hidden; ">
+        <div class="display" style="display: flex; justify-content: center; align-items: center; padding: 10px; border: red; background-color: antiquewhite; height: 2rem;"><p id="p" style="overflow: hidden;"></p></div>
+        <div class="button-number" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+            <button id="1" onclick="num(1)">1</button>
+            <button id="2" onclick="num(2)">2</button>
+            <button id="3" onclick="num(3)">3</button>
+            <button id="4" onclick="num(4)">4</button>
+            <button id="5" onclick="num(5)">5</button>
+            <button id="6" onclick="num(6)">6</button>
+            <button id="7" onclick="num(7)">7</button>
+            <button id="8" onclick="num(8)">8</button>
+            <button id="9" onclick="num(9)">9</button>
+            <button id="0" onclick="num(0)">0</button>
+            <button id="+" onclick="num('+')">+</button>
+            <button id="-" onclick="num('-')">-</button>
+            <button id="*" onclick="num('*')">x</button>
+            <button id="/" onclick="num('/')">:</button>
+            <button id="=">=</button>
+            <button></button>
+            <button id="c" onclick="hapus()">CE</button>
+            <button></button>
+            
+        </div>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

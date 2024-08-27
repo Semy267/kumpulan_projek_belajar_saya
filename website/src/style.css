@@ -1,0 +1,521 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 209, 209);
+    /* margin-bottom: 2000px; */
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    padding: 4px;
+    background-color: blueviolet;
+    position: fixed;
+    left: 0;
+    right: 0;
+    
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+    
+}
+
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    
+}
+
+nav ul li a:hover{
+    color: crimson;
+}
+
+/* dropdown */
+
+.dropdownService{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: aliceblue;
+    top: 3rem;
+    left: 61%;
+    border-radius: 0px 12px 12px 12px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: rgb(161, 126, 194);
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+.dropdownService h4 {
+    margin: 0;
+    border-bottom: 1px solid black;
+
+}
+
+.dropdownService h4 a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar end */
+
+/* section */
+
+section{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 1350px;
+    align-self: center;
+    text-align: center;
+    margin-top: 5em;
+}
+
+section div{
+    width: 250px;
+    box-sizing: border-box;
+    margin: 4px;
+}
+
+section .section.utama{
+    order: 2;
+    width: 720px;
+    background-color: white;
+    box-shadow: 1em;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+section .section.utama h1{
+    text-align: center;
+}
+
+.section.utama img{
+    width: 700px;
+    height: 400px;
+}
+
+.section1{
+    order: 1;
+}
+
+.section1 ul li{
+    list-style: none;
+    border: 1px solid black;
+    margin: 4px auto;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.section1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.section1 ul li:hover{
+    background-color: grey;
+    
+}
+
+.section2{
+    order: 3;
+}
+
+/* section end */
+
+/* perkotakan */
+
+.perkotakan{
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 720px;
+}
+
+.perkotakan div{
+    width: 150px;
+    height: 150px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.perkotakan .kotak1 h3,
+.kotak2 h3,
+.kotak3 h3,
+.kotak4 h3{
+    text-align: center;
+}
+
+.kotak1{
+    background-color: aqua;
+}
+
+.kotak2{
+    background-color: yellowgreen;
+}
+
+.kotak3{
+    background-color: crimson;
+}
+
+.kotak4{
+    background-color: royalblue;
+}
+
+/* perkotakan end */
+
+/* galery */
+
+.galery{
+    width: 720px;
+    height: 200px;
+    background-color: white;
+    align-self: center;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+
+.photo1{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-image: url(/img/thumbnail/bohlam.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.photo2{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-image: url(/img/thumbnail/kopi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.photo3{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-image: url(/img/thumbnail/orang.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.photo4{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-image: url(/img/thumbnail/lorong.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.photo1 h4,
+.photo2 h4,
+.photo3 h4,
+.photo4 h4{
+    position: absolute;
+    line-height: 110px;
+    margin-left: 3em;
+    opacity: 0;
+    transition: 1s;
+}
+/* galery end */
+/* photo hover */
+
+.photo1:hover{
+    opacity: 0.5;
+}
+
+.photo2:hover{
+    opacity: 0.5;
+}
+
+.photo3:hover{
+    opacity: 0.5;
+}
+
+.photo4:hover{
+    opacity: 0.5;
+}
+
+/* photo hover end */
+/* text photo hover */
+
+.photo1:hover h4{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.photo2:hover h4{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.photo3:hover h4{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.photo4:hover h4{
+    opacity: 1;
+    transform: scale(2);
+}
+
+/* text photo hover end */
+
+/* responsive */
+
+/* ukuran tablet */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    /* navbar */
+    
+    nav{
+        width: 100vw;
+    }
+    
+    nav ul{
+        width: 50%;
+    }
+
+    /* navbar end */
+
+    /* section */
+    section{
+        width: 768px;
+    }
+
+    .section.utama img{
+        width: 100%;
+        height: 50%;
+    }
+    /* section end */
+
+    /* perkotakan */
+    .perkotakan{
+        width: 440px;
+    }
+
+    .perkotakan div{
+        width: 100px;
+        height: 100px;
+        font-size: 10px;
+
+    }
+
+    .galery{
+        width: 440px;
+        height: 130px;
+    }
+
+    .photo1,
+    .photo2,
+    .photo3,
+    .photo4{
+        width: 100px;
+        height: 100px;
+    }
+
+    .photo1 h4,
+    .photo2 h4,
+    .photo3 h4,
+    .photo4 h4{
+        line-height: 55px;
+        margin-left: 1.5em;
+        opacity: 0;
+    }
+
+}
+
+/* perkotaan end */
+/* ukuran tablet end */
+
+/* ukuran laptop */
+@media only screen and (min-width: 992px)and (max-width:1200px){
+
+    nav{
+        width: 100vw;
+    }
+    
+    nav ul{
+        width: 40%;
+    }
+
+    /* navbar end */
+
+    /* section */
+    section{
+        width: 992px;
+    }
+
+    .section.utama img{
+        width: 100%;
+        height: 50%;
+    }
+    /* section end */
+
+    /* perkotakan */
+    .perkotakan{
+        width: 590px;
+    }
+
+    .perkotakan div{
+        width: 130px;
+        height: 130px;
+        font-size: 13px;
+
+    }
+
+    .galery{
+        width: 570px;
+        height: 130px;
+    }
+
+    .photo1,
+    .photo2,
+    .photo3,
+    .photo4{
+        width: 100px;
+        height: 100px;
+    }
+
+    .photo1 h4,
+    .photo2 h4,
+    .photo3 h4,
+    .photo4 h4{
+        line-height: 55px;
+        margin-left: 1.5em;
+        opacity: 0;
+    }
+
+}
+
+/* ukuran laptop end */
+
+/* ukuran extra small devices*/
+@media only screen and (max-width: 600px){
+
+      /* navbar */
+    
+      nav{
+        width: 100vw;
+    }
+    
+    nav ul{
+        width: 70%;
+    }
+
+    /* navbar end */
+
+    /* section */
+    section{
+        width: 412px;
+    }
+
+    .section1{
+        display: none;
+    }
+
+    .section2{
+        display: none;
+    }
+
+    .section.utama{
+        font-size: 14px
+    }
+
+    .section.utama img{
+        width: 100%;
+        height: 50%;
+    }
+    /* section end */
+
+    /* perkotakan */
+    .perkotakan{
+        width: 390px;
+    }
+
+    .perkotakan div{
+        width: 90px;
+        height: 90px;
+        font-size: 9px;
+
+    }
+
+    .galery{
+        width: 405px;
+        height: 130px;
+    }
+
+    .photo1,
+    .photo2,
+    .photo3,
+    .photo4{
+        width: 100px;
+        height: 100px;
+    }
+
+    .photo1 h4,
+    .photo2 h4,
+    .photo3 h4,
+    .photo4 h4{
+        line-height: 55px;
+        margin-left: 1.5em;
+        opacity: 0;
+    }
+
+    /* text photo hover */
+
+.photo1:hover h4{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.photo2:hover h4{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.photo3:hover h4{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.photo4:hover h4{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+}
+
+/* perkotaan end */
+
+

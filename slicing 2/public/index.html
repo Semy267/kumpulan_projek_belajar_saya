@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/CSS/output.css">
+</head>
+<body class="px-4">
+    <div class="container m-auto relative">
+        <nav class="flex justify-around fixed container bg-white pr-3 py-3">
+            <div class="flex space-x-2 w-fit h-fit text-nowrap items-center">
+                <img src="/img/nav/ep_arrow-left-bold.svg" alt="" class="w-5 h-5">
+                <p class="font-bold max-[767px]:text-[13px]">Fundemental Flutter Developer (Mobile App)</p>
+            </div>
+    
+            <div class="flex w-[300px] justify-between">
+                <div class="flex space-x-10">
+                    <div class="flex space-x-3   max-[767px]:space-x-2  items-center w-fit">
+                        <img src="/img/nav/gg_search.svg" alt="" class="w-[26px] h-[26px]  max-[767px]:w-[18px]  max-[767px]:h-[18px]">
+                        <img src="/img/nav/ion_notifcations.png" alt="" class="w-[24px] h-[24px]  max-[767px]:w-[18px]  max-[767px]:h-[18px]">
+                    </div>
+                    <p class="max-[767px]:text-[13px]">Halo, <span class="font-bold max-[767px]:text-[13px]">Rifky Gunawan</span></p>
+                </div>
+    
+                <div class="flex space-x-1 items-center w-fit">
+                    <div class="flex space-x-2 items-center border" id="akun">
+                        <img src="/img/nav/Ellipse 14 (3).svg" alt="" class=" max-[767px]:w-[18px]  max-[767px]:h-[18px]">
+                        <img src="/img/nav/ep_arrow-down.png" alt="" class="h-5 transition-all  max-[767px]:w-[18px]  max-[767px]:h-[18px]" id="arrow3">
+                    </div>
+
+                    <div class="absolute top-[4rem] right-[1rem] hidden z-10" id="dropdown">
+                        <div class="w-[250px] h-[260px] rounded-lg border p-4 bg-[#F8FAFC]">
+                            <div class="flex justify-between mb-2">
+                                <div class="flex space-x-2 items-center">
+                                    <img src="/img/nav/Ellipse 14 (3).svg" alt="" class="w-[20px] h-[20px]">
+                                    <p class="text-nowrap text-[14px]">Rifky Gunawan</p>
+                                </div>
+
+                                <img src="/img/nav/circum_edit.svg" alt="">
+                            </div>
+                            <hr class="mb-2">
+                            <ul class="text-[15px] space-y-2 mb-2">
+                                <li>Kelas Saya</li>
+                                <li>Sertifikat</li>
+                                <li>Program</li>
+                                <li>Kelas Disimpan</li>
+                                <li>Artikel Disimpan</li>
+                            </ul>
+                            <hr class="mb-1">
+
+                            <h1 class="font-bold text-[16px] text-[#FF3C3C]">Logout</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="grid grid-cols-[70%_30%] pt-16 max-[774px]:grid-cols-[100%]">
+            <div>
+                <h1 class="font-bold text-[19px] mb-2 max-[767px]:text-[14px]">Pengenalan Mobile App</h1>
+                <iframe class="w-full h-[450px] rounded-lg" src="https://www.youtube.com/embed/Dm02bG6ivv4?si=w5G3xdQhCRl4THDe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class=" mt-6 flex w-full justify-between pr-2 items-center">
+                    <div class="flex items-center space-x-2">
+                        <img src="/img/col1/Ellipse 14.svg" alt="" class="w-[60px] h-[60px]">
+                        <div>
+                            <h1 class="font-bold">Amip Abdul Hamip</h1>
+                            <p>Senior Mobile Developer at Oxinos</p>
+                        </div>
+                    </div>
+
+                    <button class="bg-[#E2E8F0] rounded-lg w-[175px] h-[45px] text-[#94A3B8] font-bold text-[18px] p-[10px] group hover:bg-[#bdc2c9]" id="btn"><span class="group-hover:text-[#93a0b8]" id="tandai">Tandai</span> <span class="group-hover:text-[#93a0b8]" id="selesai">Selesai</span></button>
+                </div>
+
+                <div class="flex mt-8 space-x-4 mb-4">
+                    <h1 class="font-bold text-[18px] cursor-pointer" id="deskripsi">Deskripsi Kelas</h1>
+                    <h1 class="font-bold text-[18px] cursor-pointer" id="assets">Assets</h1>
+                    <h1 class="font-bold text-[18px] cursor-pointer" id="transkip">Transkip</h1>
+                </div>
+
+                <div id="isiDeskripsi" class="hidden">
+                    <p class="mb-4">
+                        Kelas Flutter ini dirancang untuk membantu Anda mempelajari cara membangun aplikasi mobile yang menakjubkan menggunakan Flutter, sebuah framework open-source dari Google. Flutter memungkinkan Anda membuat aplikasi nativ cross-platform yang indah dan performa tinggi untuk iOS dan Android dengan satu basis kode.
+                    </p>
+
+                    <!-- deskripsi -->
+                    <div>
+                        <h1 class="font-bold mb-5">Apa yang Akan Anda Pelajari</h1>
+                        <ul class="space-y-1 list-disc pl-4">
+                            <li>Pengantar Flutter dan Dart: Memahami dasar-dasar Flutter dan bahasa pemrograman Dart.</li>
+                            <li>Widget dan Layouts: Membuat dan mengatur widget serta memahami konsep layout di Flutter.</li>
+                            <li>State Management: Mengelola state aplikasi menggunakan berbagai teknik seperti setState, Provider, dan Bloc.</li>
+                            <li>Navigasi dan Routing: Membangun navigasi antar halaman dan mengelola routing aplikasi.</li>
+                            <li>Integrasi API: Menghubungkan aplikasi Flutter dengan API eksternal untuk mendapatkan dan mengirim data.</li>
+                            <li>Database Lokal: Menyimpan data secara lokal menggunakan SQLite dan Hive.</li>
+                            <li>Testing dan Debugging: Melakukan testing dan debugging aplikasi Flutter untuk memastikan kualitas dan kinerja.</li>
+                            <li>Deployment: Mengemas dan mendistribusikan aplikasi ke Google Play Store dan Apple App Store.</li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+
+                <!-- assets -->
+                <div class="hidden" id="isiAssets">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam veritatis voluptatem laborum quam cupiditate pariatur saepe similique, tempore dolorem tempora vel inventore? Impedit veritatis dolorem necessitatibus harum atque nostrum eaque labore ipsa ea quisquam excepturi fugiat hic praesentium corporis dicta at esse, eum, optio rerum? Blanditiis nobis sit assumenda, ad expedita animi quam laborum minus mollitia at minima ex, beatae accusantium aperiam eius officia corrupti. Non, repudiandae eum reiciendis temporibus ab quibusdam error illo reprehenderit necessitatibus. Voluptates possimus ipsa consequatur beatae hic rem maxime cupiditate dolore itaque sed tempore explicabo corporis, deleniti repellat optio placeat ipsam earum. Dolorum, sequi rerum?</p>
+                </div>
+
+                <!-- transkip -->
+                <div class="hidden" id="isiTranskip">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos doloremque vero ipsum, dolore mollitia cum. Reprehenderit, rem dolores ab optio ducimus mollitia minima laboriosam aliquam facere pariatur debitis nobis. Quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam veritatis voluptatem laborum quam cupiditate pariatur saepe similique, tempore dolorem tempora vel inventore? Impedit veritatis dolorem necessitatibus harum atque nostrum eaque labore ipsa ea quisquam excepturi fugiat hic praesentium corporis dicta at esse, eum, optio rerum? Blanditiis nobis sit assumenda, ad expedita animi quam laborum minus mollitia at minima ex, beatae accusantium aperiam eius officia corrupti. Non, repudiandae eum reiciendis temporibus ab quibusdam error illo reprehenderit necessitatibus. Voluptates possimus ipsa consequatur beatae hic rem maxime cupiditate dolore itaque sed tempore explicabo corporis, deleniti repellat optio placeat ipsam earum. Dolorum, sequi rerum?</p>
+                </div>
+            </div>
+
+            <div class="max-[774px]:hidden">
+                <div class="m-auto w-full mt-16 pl-9">
+                    <div class="flex space-x-4 items-center w-full mb-3 cursor-pointer justify-between" id="mbApp">
+                        <h1 class="font-bold text-[19px]  w-fit text-nowrap max-[965px]:text-[14px]">Pengenalan Mobile App</h1>
+                        <img src="/img/nav/ep_arrow-down.png" alt="" class="h-6 ml-2 transition-all" id="arrow1">
+                    </div>
+                    <div id="lesson1" class="w-full transition-all">
+                        <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5 bg-[#007AFF] text-white">
+                            <div>
+                                <h4 class="font-bold text-[15px]">Apa itu mobile app</h4>
+                                <p class="font-normal text-[13px] block w-fit">Lesson 01</p>
+                            </div>
+                            <img src="" alt="" class="" id="les1">
+                        </button>
+    
+                        <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5">
+                            <div>
+                                <h4 class="font-bold text-[15px] text-nowrap">Pengenalan bahas<span class="hidden max-[965px]:inline">..</span><span class="max-[965px]:hidden">a pemrog...</span></h4>
+                                <p class="font-normal text-[13px] text-[#475569] w-fit">Lesson 02</p>
+                            </div>
+                            <img src="/img/col2/uim_padlock.svg" alt="" class="" id="les2">
+                        </button>
+    
+                        <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5">
+                            <div>
+                                <h4 class="font-bold text-[15px]">Tools yang digun <span class="hidden max-[965px]:inline">...</span><span class="max-[965px]:hidden">akan</span></h4>
+                                <p class="font-normal text-[13px] text-[#475569] block w-fit">Lesson 03</p>
+                            </div>
+                            <img src="/img/col2/uim_padlock.svg" alt="" class="">
+                        </button>
+    
+                        <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5">
+                            <div>
+                                <h4 class="font-bold text-[15px]">Kesimpulan</h4>
+                                <p class="font-normal text-[13px] text-[#475569] block w-fit">Lesson 04</p>
+                            </div>
+                            <img src="/img/col2/uim_padlock.svg" alt="" class="">
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="m-auto w-full mt-16">
+                    <div class="m-auto w-full mt-16 pl-9">
+                        <div class="flex space-x-4 items-center w-full mb-3 justify-between" id="flutter">
+                            <h1 class="font-bold text-[19px]  block w-fit text-nowrap max-[965px]:text-[14px]">Pengenalan Flutter</h1>
+                            <img src="/img/nav/ep_arrow-down.png" alt="" class="h-6 transition-all" id="arrow2">
+                        </div>
+                        <div id="lesson2" class="w-full border">
+                            <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5">
+                                <div>
+                                    <h4 class="font-bold text-[15px]">Apa itu Flutter</h4>
+                                    <p class="font-normal text-[13px] text-[#475569] block w-fit">Lesson 05</p>
+                                </div>
+                                <img src="/img/col2/uim_padlock.svg" alt="" class="">
+                            </button>
+        
+                            <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5">
+                                <div>
+                                    <h4 class="font-bold text-[15px] text-nowrap">Bahasa yang digu<span class="hidden max-[965px]:inline">..</span><span class="max-[965px]:hidden">nakan...</span></h4>
+                                    <p class="font-normal text-[13px] text-[#475569] block w-fit">Lesson 06</p>
+                                </div>
+                                <img src="/img/col2/uim_padlock.svg" alt="" class="">
+                            </button>
+        
+                            <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5">
+                                <div>
+                                    <h4 class="font-bold text-[15px]">Tools yang digun<span class="hidden max-[965px]:inline">..</span><span class="max-[965px]:hidden">akan...</span></h4>
+                                    <p class="font-normal text-[13px] text-[#475569] block w-fit">Lesson 07</p>
+                                </div>
+                                <img src="/img/col2/uim_padlock.svg" alt="" class="">
+                            </button>
+        
+                            <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5">
+                                <div>
+                                    <h4 class="font-bold text-[15px]">Kesimpulan</h4>
+                                    <p class="font-normal text-[13px] text-[#475569] block w-fit">Lesson 08</p>
+                                </div>
+                                <img src="/img/col2/uim_padlock.svg" alt="" class="">
+                            </button>
+        
+                            <button class="flex w-full h-[68px] rounded-lg border border-[#E2E8F0] justify-between items-center px-3 shadow-md mb-5">
+                                <div>
+                                    <h4 class="font-bold text-[15px] text-left">Quiz</h4>
+                                    <p class="font-normal text-[13px] text-[#475569] block w-fit">Lesson 09</p>
+                                </div>
+                                <img src="/img/col2/uim_padlock.svg" alt="" class="">
+                            </button> 
+                        </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+<script src="/src/JS/main.js"></script>
+</body>
+</html>

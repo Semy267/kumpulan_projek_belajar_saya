@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator sederhana</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            border: 1px solid black;
+            margin-top: 10px;
+            padding: 10px;
+            width: 10em;
+        }
+        p{
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>kalkulator Sederhana</h1>
+    <input type="text" placeholder="masukan nomor ke-1"><br>
+    <input type="text" placeholder="operasi: +,-,*,/,%"><br>
+    <input type="text" placeholder="masukan nomor ke-2"><br>
+    <button id="hasil">=</button><br>
+    <div class="container"></div>
+    <script>
+        const number = document.getElementsByTagName('input')
+        let btHasil = document.getElementById('hasil')
+        
+        btHasil.addEventListener('click', ()=>{
+
+            let num1 = parseFloat(number[0].value)
+            let num2 = parseFloat(number[2].value)
+            let opr = number[1].value
+            
+            let hasil
+            
+            switch(true){
+
+                
+                case(opr == '+'):
+                hasil = num1 + num2
+                break
+
+                case(opr == '-'):
+                hasil = num1 - num2
+                break
+
+                case(opr == '*'):
+                hasil = num1 * num2
+                break
+
+                case(opr == '/'):
+                hasil = num1 / num2
+                break
+
+                case(opr == '%'):
+                hasil = num1 % num2
+                break
+
+                case(opr == '**'):
+                hasil = num1 ** num2
+                break
+
+                default:
+                    hasil = undefined
+            }
+
+            if(hasil ==undefined || hasil== NaN){
+                hasil = 'Inputan tidak valid!'
+            }
+
+            const pBaru = document.createElement('p')
+            const container = document.getElementsByClassName('container')[0]
+            const textPBaru = document.createTextNode(hasil)
+            pBaru.appendChild(textPBaru)
+            container.appendChild(pBaru)
+
+        })
+   
+    
+       
+        
+        
+        
+    </script>
+
+<!-- 
+<p id="tempat">catatan: <br>
+    *   = perkalian <br>
+    /   = pembagian <br>
+    %   = sisa bagi <br>
+    **  = pangkat
+</p> -->
+
+</body>
+</html>

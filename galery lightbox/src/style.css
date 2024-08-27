@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: gainsboro;
+    font-family: Roboto;
+    
+
+}
+
+.container{
+    background-color: white;
+    width: 480px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    
+}
+
+
+/* photo 1 */
+.img1{
+    background-image: url(/img/thumbnail/bohlam.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    transition: 1s;
+}
+.img1:hover{
+    opacity: 0.5;
+}
+.contentImg1:hover p{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.contentImg1{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    
+}
+
+.contentImg1 p{
+    position: absolute;
+    line-height: 90px;
+    font-size: 8px;
+    margin-left: 38px;
+    opacity: 0;
+    transition: 1.4s;
+}
+
+
+
+
+/* photo 1 end */
+
+/* photo 2 */
+
+.img2{
+    background-image: url(/img/thumbnail/kopi.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    transition: 1s;
+}
+
+.img2:hover{
+    opacity: 0.5;
+}
+.contentImg2:hover p{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.contentImg2{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left: 135px;
+    top: 25px;
+    
+}
+
+.contentImg2 p{
+    position: absolute;
+    line-height: 90px;
+    font-size: 8px;
+    margin-left: 38px;
+    opacity: 0;
+    transition: 1.4s;
+}
+
+/* photo 2 end */
+
+/* photo 3 */
+
+.img3{
+    background-image: url(/img/thumbnail/orang.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    transition: 1s;
+}
+
+.img3:hover{
+    opacity: 0.5;
+}
+.contentImg3:hover p{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.contentImg3{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left: 241px;
+    top: 25px;
+    
+}
+
+.contentImg3 p{
+    position: absolute;
+    line-height: 90px;
+    font-size: 8px;
+    margin-left: 38px;
+    opacity: 0;
+    transition: 1.4s;
+}
+
+/* photo 3 end */
+
+/* photo 4 */
+
+.img4{
+    background-image: url(/img/thumbnail/lorong.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    transition: 1s;
+}
+
+.img4:hover{
+    opacity: 0.5;
+}
+.contentImg4:hover p{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.contentImg4{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left: 347px;
+    top: 25px;
+    
+}
+
+.contentImg4 p{
+    position: absolute;
+    line-height: 90px;
+    font-size: 8px;
+    margin-left: 38px;
+    opacity: 0;
+    transition: 1.4s;
+}
+
+/* photo 4 end */
+
+
+/* light Box */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.close{
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    line-height: 15px;
+    transition: 1s;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    transform: translate(-3.5%, -67.7%);
+}
+
+.close:hover{
+    color: red;
+}
+
+.lightbox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#bungkusan{
+    width: 500px;
+    height: 580px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Light Box end */
+
+/* animation */
+
+@keyframes judul {
+    0%{
+        margin-bottom: 100px;
+        transform: scale(1.5);
+    }
+
+    100%{
+        margin-bottom: 0px;
+    }
+}
+
+h1{
+    animation: judul 2s forwards;
+}
+
+@keyframes container{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.container{
+    animation: container 2s forwards;
+}

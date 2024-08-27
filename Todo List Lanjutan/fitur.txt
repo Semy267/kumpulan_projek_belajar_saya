@@ -1,0 +1,41 @@
+Untuk proyek Todo List, berikut adalah fitur-fitur yang dapat ditambahkan agar aplikasi menjadi lebih lengkap dan bermanfaat:
+
+1. **Menambahkan Tugas**
+   - Pengguna dapat menambahkan tugas baru dengan memasukkan deskripsi tugas.
+   - Opsi untuk menetapkan tanggal jatuh tempo.
+
+2. **Menghapus Tugas**
+   - Pengguna dapat menghapus tugas yang sudah selesai atau tidak diperlukan lagi.
+
+3. **Menandai Tugas Selesai**
+   - Pengguna dapat menandai tugas sebagai selesai dengan mengklik pada tugas tersebut.
+
+4. **Mengedit Tugas**
+   - Pengguna dapat mengedit deskripsi dan tanggal jatuh tempo dari tugas yang sudah ada.
+
+5. **Penyimpanan Lokal**
+   - Data tugas disimpan di penyimpanan lokal browser sehingga tetap ada meskipun halaman di-refresh atau browser ditutup.
+
+6. **Filter dan Sortir Tugas**
+   - Filter untuk melihat semua tugas, tugas yang sudah selesai, atau tugas yang belum selesai.
+   - Sortir tugas berdasarkan tanggal jatuh tempo atau abjad.
+
+7. **Prioritas Tugas**
+   - Pengguna dapat menetapkan prioritas (tinggi, sedang, rendah) untuk setiap tugas.
+
+8. **Kategori atau Label Tugas**
+   - Pengguna dapat menambahkan kategori atau label pada tugas untuk mengorganisirnya lebih baik.
+
+9. **Pemberitahuan atau Pengingat**
+   - Opsi untuk mengatur pengingat yang mengirim notifikasi saat tanggal jatuh tempo mendekat.
+
+10. **Tampilan Responsif**
+    - Antarmuka yang responsif sehingga aplikasi dapat digunakan dengan baik di berbagai ukuran layar, termasuk perangkat mobile.
+
+11. **Tampilan Estetis dan Ramah Pengguna**
+    - Desain UI/UX yang bersih dan intuitif, dengan tampilan yang menarik.
+
+12. **Fitur Pencarian**
+    - Opsi untuk mencari tugas berdasarkan kata kunci tertentu.
+
+Dengan fitur-fitur tersebut, aplikasi Todo List akan menjadi lebih fungsional dan bermanfaat bagi pengguna dalam mengelola tugas-tugas mereka sehari-hari.

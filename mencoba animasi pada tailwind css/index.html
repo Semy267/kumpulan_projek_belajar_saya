@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Document</title>
+    <style>
+      @keyframes open {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+        }
+
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes close {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        100% {
+          opacity: 0;
+          transform: scale(0);
+        }
+      }
+
+
+      @keyframes datang {
+        0%{
+          opacity: 0;
+          margin-top: 50px;
+        }
+
+        100%{
+          opacity: 1;
+          margin-top: 0;
+        }
+      }
+    </style>
+</head>
+<body>
+<div class="container m-auto">
+  <button class="px-2 py-1 m-5 bg-red-500 rounded text-white btn-aktif">aktifkan</button>
+
+
+  <div class="grid grid-cols-3 gap-3 movie-cards">
+    <div class="w-full rounded shadow-xl h-full p-3 space-y-1 animate-[datang_0.5s_ease_forwards]">
+      <img src="/MV5BNTIyNDAzMGQtYmQ0YS00OWE2LWJjZjgtY2M3NmU4YmYxMDQ5XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg" alt="" class="m-auto">
+      <div class="space-y-2">
+          <p class="text-xl font-semibold">${m.Title}</p>
+          <h2 class="text-slate-500">${m.Year}</h2>
+          <button class="bg-sky-400 hover:bg-sky-500 active:bg-sky-600 rounded-sm w-full text-white detail-btn" data-imdbid="${m.imdbID}">Detail</button>
+      </div>
+    </div>
+
+    <div class="w-full rounded shadow-xl h-full p-3 space-y-1 animate-[datang_0.5s_ease_forwards]">
+      <img src="/MV5BNTIyNDAzMGQtYmQ0YS00OWE2LWJjZjgtY2M3NmU4YmYxMDQ5XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg" alt="" class="m-auto">
+      <div class="space-y-2">
+          <p class="text-xl font-semibold">${m.Title}</p>
+          <h2 class="text-slate-500">${m.Year}</h2>
+          <button class="bg-sky-400 hover:bg-sky-500 active:bg-sky-600 rounded-sm w-full text-white detail-btn" data-imdbid="${m.imdbID}">Detail</button>
+      </div>
+    </div>
+
+    <div class="w-full rounded shadow-xl h-full p-3 space-y-1 animate-[datang_0.5s_ease_forwards]">
+      <img src="/MV5BNTIyNDAzMGQtYmQ0YS00OWE2LWJjZjgtY2M3NmU4YmYxMDQ5XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg" alt="" class="m-auto">
+      <div class="space-y-2">
+          <p class="text-xl font-semibold">${m.Title}</p>
+          <h2 class="text-slate-500">${m.Year}</h2>
+          <button class="bg-sky-400 hover:bg-sky-500 active:bg-sky-600 rounded-sm w-full text-white detail-btn" data-imdbid="${m.imdbID}">Detail</button>
+      </div>
+    </div>
+
+    <div class="w-full rounded shadow-xl h-full p-3 space-y-1 animate-[datang_0.5s_ease_forwards]">
+      <img src="/MV5BNTIyNDAzMGQtYmQ0YS00OWE2LWJjZjgtY2M3NmU4YmYxMDQ5XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg" alt="" class="m-auto">
+      <div class="space-y-2">
+          <p class="text-xl font-semibold">${m.Title}</p>
+          <h2 class="text-slate-500">${m.Year}</h2>
+          <button class="bg-sky-400 hover:bg-sky-500 active:bg-sky-600 rounded-sm w-full text-white detail-btn" data-imdbid="${m.imdbID}">Detail</button>
+      </div>
+    </div>
+
+    <div class="w-full rounded shadow-xl h-full p-3 space-y-1 animate-[datang_0.5s_ease_forwards]">
+      <img src="/MV5BNTIyNDAzMGQtYmQ0YS00OWE2LWJjZjgtY2M3NmU4YmYxMDQ5XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg" alt="" class="m-auto">
+      <div class="space-y-2">
+          <p class="text-xl font-semibold">${m.Title}</p>
+          <h2 class="text-slate-500">${m.Year}</h2>
+          <button class="bg-sky-400 hover:bg-sky-500 active:bg-sky-600 rounded-sm w-full text-white detail-btn" data-imdbid="${m.imdbID}">Detail</button>
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal -->
+  <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 animate-[open_0.5s_ease_forwards]">
+      <div class="flex justify-between items-center pb-3">
+        <h3 class="text-xl font-semibold">Modal Title</h3>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="w-[13rem] h-[20rem] bg-slate-300 animate-pulse"></div>
+
+        <div class="space-y-2">
+            <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+            <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+            <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+            <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+            <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+            <div class="w-full h-20 bg-slate-200 animate-pulse rounded"></div>
+        </div>
+      </div>
+      <div class="flex justify-end pt-4">
+        <button id="closeModalBtn" class="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700 ">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <script src="/src/main.js"></script>
+</body>
+</html>

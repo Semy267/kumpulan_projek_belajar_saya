@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gebra digital school</title>
+    <link rel="stylesheet" href="/src/CSS/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="font-[DM Sans]">
+    <div class=" w-auto m-auto">
+        <!-- NAVBAR -->
+        <nav class=" right-0 left-0 p-4  fixed z-[60] m-auto bg-gradient-to-r from-[#007AFF] to-[#504EB6]">
+            <div class="w-[90vw] flex justify-around m-auto">
+                <img src="/img/Logo (1).svg" alt="gebra digital school" class="max-[360px]:w-[100px]">
+                <ul class="flex ">
+                    <li class="m-5 text-white font-medium cursor-pointer items-center flex w-[59px] max-[884px]:text-[10px]" id="kelas">Kelas <img src="/img/fe_arrow-down.svg" alt="" class="ml-1 transition-all w-[16px] h-[16px]" id="arrowDown1"></li>
+                    <!-- Dropdown kelas -->
+                        <div class="w-[620px] h-[297px] rounded-lg bg-white p-[30px] absolute top-[5em] ml-10 hidden" id="drKelas">
+                            <h4 class="text-[#475569] font-bold text-[24px] mb-4">Kategori Kelas</h4>
+                            <div class="flex mb-3">
+                                <img src="/img/Icon.svg" alt="" class="mr-2">
+                                <span>
+                                    <h4 class="text-black font-bold text-[18px]">Video Kelas</h4>
+                                    <p class="text-black font-normal text-[16px]">Vidio kelas dengan materi yang tersetruktur singkat dan padat</p>
+                                </span>
+                            </div>
+    
+                            <div class="flex mb-3">
+                                <img src="/img/Icon (1).svg" alt="" class="mr-2">
+                                <span>
+                                    <h4 class="text-black font-bold text-[18px]">Artikel</h4>
+                                    <p class="text-black font-normal text-[16px]">Belajar dari artikel yang di tulis oleh para mentor profesional</p>
+                                </span>
+                            </div>
+    
+                            <div class="flex">
+                                <img src="/img/Icon (2).svg" alt="" class="mr-2">
+                                <span>
+                                    <h4 class="text-black font-bold text-[18px]">Webinar</h4>
+                                    <p class="text-black font-normal text-[16px]">Mengikuti webinar atau event yang sudah terjadwal dari komunitas</p>
+                                </span>
+                            </div>
+                        </div>
+                    <!-- Dropdown kelas end -->
+    
+                    <!-- Dropdown program -->
+                    <li class="m-5 text-white font-medium cursor-pointer flex items-center max-[884px]:text-[10px]" id="program">Program <img src="/img/fe_arrow-down.svg" alt="" class="ml-1 transition-all w-[16px] h-[16px]" id="arrowDown2"></li>
+                        <div class="w-[794px] h-[297px] rounded-lg bg-white pl-[20px] pt-[30px] absolute top-[5em] ml-36 hidden" id="drProgram">
+                            <h4 class="text-[#475569] font-bold text-[24px] mb-4">Program</h4>
+                            <div class="flex mb-3">
+                                <img src="/img/botcam.svg" alt="" class="mr-2">
+                                <span>
+                                    <h4 class="text-black font-bold text-[18px]">Bootcamp Online</h4>
+                                    <p class="text-black font-normal text-[16px]">Belajar bootcamp secara online dengan waktu fleksible</p>
+                                </span>
+                            </div>
+    
+                            <div class="flex mb-3">
+                                <img src="/img/program.svg" alt="" class="mr-2">
+                                <span>
+                                    <h4 class="text-black font-bold text-[18px]">Program Offline</h4>
+                                    <p class="text-black font-normal text-[16px]">Belajar offline dan berinteraksi secara langsung dengan banyak ilmu yang akan di dapatkan</p>
+                                </span>
+                            </div>
+    
+                            <div class="flex">
+                                <img src="/img/buku.svg" alt="" class="mr-2">
+                                <span>
+                                    <h4 class="text-black font-bold text-[18px]">Program Beasiswa</h4>
+                                    <p class="text-black font-normal text-[16px]">Program beasiswa full program secara gratis</p>
+                                </span>
+                            </div>
+                        </div>
+                    <!-- Dropdown program end -->
+                    <li class="m-5 text-white font-medium cursor-pointer max-[884px]:text-[10px] flex items-center">Event</li>
+                    <li class="m-5 text-white font-medium cursor-pointer max-[884px]:text-[10px] flex items-center">Komunitas</li>
+                    <li class="m-5 text-white font-medium cursor-pointer max-[884px]:text-[10px] text-nowrap flex items-center">Tentang Kami</li>
+                    <li class="m-5 text-white font-medium cursor-pointer max-[884px]:text-[10px] flex items-center">Artikel</li>
+                </ul>
+                <div class="my-3 flex flex-nowrap">
+                    <button class="text-white p-[10px] w-[100px] mr-2 group rounded-md ring-4 ring-transparent hover:bg-[#007AFF] active:bg-[#0068d6]"><span class="font-semibold">Masuk</span></button>
+                    <button class="text-white p-[10px] w-[100px] bg-[#007AFF] rounded-md group hover:bg-white active:bg-[#e2e1e1]"><span class="group-hover:text-[#007AFF] font-semibold">Daftar</span></button>
+                </div>
+            </div>
+
+        </nav>
+        <!-- NAVBAR END -->
+        <!-- HEADER -->
+        <div class="bg-gradient-to-r from-[#007AFF] to-[#504EB6] w-[100%] h-[644px] m-auto ">
+            <div class=" w-[1030px] h-[680px] pt-[136px]  m-auto">
+                <div class="w-[737px] m-auto ">
+                    <h3 class="text-center text-[#D7FEFB] font-bold mb-6 text-[24px]">Gebra Digital School</h3>
+                    <h1 class="text-center text-[#F8FAFC] font-medium text-[36px] mb-6">Ubah Masa Depanmu Dengan Keahlian Baru</h1>
+                    <p class="text-center text-[#F8FAFC] font-normal font text-[20px]">"Gabung dengan ribuan pelajar yang telah sukses bersama <br> kursus online kami. Mulai belajar sekarang dan buka peluang <br> karier yang lebih cerah!"</p>
+                </div>
+                <div class="w-[1030px] m-auto  mt-7 flex flex-col justify-center center">
+                    <div class=" mb-7 self-center flex items-center justify-center">
+                        <button class="bg-[#F8FAFC] p-[10px] text-[#007AFF] font-medium rounded-lg mr-3 group hover:bg-[#007AFF] active:bg-[#0068d6]"><span class="group-hover:text-white">Belajar Sekarang</span></button>
+                        <button class="font-medium  p-[5px] text-[#F8FAFC] flex items-center group hover:bg-white rounded-lg active:bg-[#e2e1e1]"><span class="group-hover:text-[#007AFF]">Selengkapnya</span> <span class="font-bold text-[23px] ml-1 group-hover:text-[#007AFF]">&DownArrow;</span></button>
+                    </div>
+                    <img src="/img/hero 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- HEADER END -->
+        <!-- SECTION -->
+         <!-- SECTION A -->
+        <div class="m-auto mt-[16em] w-[1300px]">
+            <h1 class="text-[#007AFF] font-bold text-[30px] text-center mb-8">Berbagai Pembelajaran di Gebra Digital School</h1>
+            <div class="flex justify-evenly">
+                <div class="w-[295px]">
+                    <img src="/img/product.svg" alt="">
+                    <h4 class="font-bold text-[24px] my-3">Product Development</h4>
+                    <p class="text-[#64748B] font-normal text-[13px]">Proses ini melibatkan berbagai tahap, mulai dari ideasi hingga peluncuran produk ke pasar.</p>
+                </div>
+                
+                <div class="w-[295px]">
+                    <img src="/img/tim.svg" alt="">
+                    <h4 class="font-bold text-[24px] my-3">Bangun Tim Start Up</h4>
+                    <p class="text-[#64748B] font-normal text-[13px]">Mewujudkan visi perusahaan dan mengatasi berbagai tantangan yang muncul</p>
+                </div>
+    
+                <div class="w-[295px]">
+                    <img src="/img/manage.svg" alt="">
+                    <h4 class="font-bold text-[24px] my-3">Manage Product</h4>
+                    <p class="text-[#64748B] font-normal text-[13px]">Pengembangan produk diperusahaan, terutama dalam startup dan perusahaan teknologi.</p>
+                </div>
+    
+                <div class="w-[295px]">
+                    <img src="/img/leader.svg" alt="">
+                    <h4 class="font-bold text-[24px] my-3">Leadership Program</h4>
+                    <p class="text-[#64748B] font-normal text-[13px]">Dirancang untuk mengembangkan keterampilan dan kompetensi kepemimpinan individu</p>
+                </div>
+
+            </div>
+           
+        </div>
+        <!-- SECTION A END -->
+        <!-- SECTION B -->
+        <div class="w-[1030px] m-auto mt-[5em]">
+            <h1 class="text-center text-[#007AFF] font-bold text-[30px] mb-8">Kenapa Gebra Digital School Berbeda</h1>
+            <div class="flex">
+                <img src="/img/Group 1000000996.svg" alt="">
+                <div class="flex flex-col m-auto w-[504.38px] h-[351px] justify-between ">
+                    <div class="bg-[#187CFF] shadow-xl rounded-xl w-[504.38px] h-[101px] p-5">
+                        <img src="/img/trompet.svg" alt="" class="float-left p-5">
+                        <span>
+                            <h4 class="font-bold text-[18px] text-white">Akses mudah & program-program beragam</h4>
+                            <p class="font-normal text-[13px] text-white">akses mudah dan beragam program adalah penting untuk memastikan partisipasi yang luas.</p>
+                        </span>
+                    </div>
+    
+                    <div class="bg-[#28A4D7] shadow-xl rounded-xl w-[504.38px] h-[101px] p-5">
+                        <img src="/img/grommet-icons_impact.svg " alt="" class="float-left p-5">
+                        <span>
+                            <h4 class="font-bold text-[18px] text-[#F8FAFC]">Ratusan Ribu Member. Terbukti Berdampak</h4>
+                            <p class="font-normal text-[13px] text-[#F8FAFC]">Kami menghubungkan kamu dengan project dari Hiring Partner, Perusahaan maupun UKM agar income dan skill kamu makin jago</p>
+                        </span>
+                    </div>
+    
+                    <div class="bg-white shadow-xl rounded-xl w-[504.38px] h-[101px] p-5">
+                        <img src="/img/bank-financial.svg" alt="" class="float-left p-5">
+                        <span>
+                            <h4 class="text-[#303030] font-bold text-[18px]">Ratusan Ribu Member. Terbukti Berdampak</h4>
+                            <p class="font-normal text-[13px] text-[#676767]">Kami menghubungkan kamu dengan project dari Hiring Partner, Perusahaan maupun UKM agar income dan skill kamu makin jago</p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- SECTION B END -->
+         <!-- SECTION C -->
+        <div class="m-auto bg-slate-100 mt-32  h-[700px] w-[100%]">
+            <div class="w-[1240px] h-[595px] m-auto pt-1">
+                <h1 class="text-[#007AFF] font-bold text-[30px] text-center my-10">Training Form</h1>
+                <div class="w-[1240px] h-[526px] grid grid-cols-3">
+                    <div class="w-[396px] h-[243px] rounded-2xl pl-[30px] pt-[20px] pr-[30px] pb-[20px] bg-[#F8FAFC] shadow-xl">
+                        <img src="/img/mdi_talk.svg" alt="">
+                        <span>
+                            <h4 class="text-[#0F172A] font-bold text-[24px] my-2">Talk Show</h4>
+                            <p class="text-[#0F172A] font-normal text-[13px]">Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.</p>
+                        </span>
+                    </div>
+
+                    <div  class="w-[396px] h-[243px] rounded-2xl pl-[30px] pt-[20px] pr-[30px] pb-[20px] bg-[#F8FAFC] shadow-xl">
+                        <img src="/img/healthicons_i-training-class-negative.svg" alt="">
+                        <span>
+                            <h4 class="text-[#0F172A] font-bold text-[24px] my-2">Seminar</h4>
+                            <p class="text-[#0F172A] font-normal text-[13px]">Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.</p>
+                        </span>
+                    </div>
+
+                    <div  class="w-[396px] h-[243px] rounded-2xl pl-[30px] pt-[20px] pr-[30px] pb-[20px] bg-[#F8FAFC] shadow-xl">
+                        <img src="/img/training-icon 1.svg" alt="">
+                        <span>
+                            <h4 class="text-[#0F172A] font-bold text-[24px] my-2">Training</h4>
+                            <p class="text-[#0F172A] font-normal text-[13px]">Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.</p>
+                        </span>
+                    </div>
+
+                    <div  class="w-[396px] h-[243px] rounded-2xl pl-[30px] pt-[20px] pr-[30px] pb-[20px] bg-[#F8FAFC] shadow-xl">
+                        <img src="/img/streamline_class-lesson-solid.svg" alt="">
+                        <span>
+                            <h4 class="text-[#0F172A] font-bold text-[24px] my-2">Workshop</h4>
+                            <p class="text-[#0F172A] font-normal text-[13px]">Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.</p>
+                        </span>
+                    </div>
+
+                    <div  class="w-[396px] h-[243px] rounded-2xl pl-[30px] pt-[20px] pr-[30px] pb-[20px] bg-[#F8FAFC] shadow-xl">
+                        <img src="/img/training-icon 1 (1).svg" alt="">
+                        <span>
+                            <h4 class="text-[#0F172A] font-bold text-[24px] my-2">Interaktive</h4>
+                            <p class="text-[#0F172A] font-normal text-[13px]">Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.</p>
+                        </span>
+                    </div>
+
+                    <div  class="w-[396px] h-[243px] rounded-2xl pl-[30px] pt-[20px] pr-[30px] pb-[20px] bg-[#F8FAFC] shadow-xl">
+                        <img src="/img/ic_baseline-class.svg" alt="">
+                        <span>
+                            <h4 class="text-[#0F172A] font-bold text-[24px] my-2">Kelas</h4>
+                            <p class="text-[#0F172A] font-normal text-[13px]">Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION C END -->
+        <!-- SECTION D -->
+        <div class="m-auto pt-40 w-[1440px] h-[575px]">
+            <img src="/img/indonesia 1.svg" alt="" class="m-auto w-[1440px] h-[575px]">
+        </div>
+        <!-- SECTION D END -->
+        <!-- SECTION E -->
+        <div class="mt-44 m-auto w-[1356px]">
+            <h1 class="text-[#007AFF] font-bold text-[36px] text-center mt-16">Belajar bareng mentor profesional yang <br>sudah berpengalaman 5+ Tahun</h1>
+            <div class="w-24 ml-[85%]">
+                <button class="text-[#007AFF] font-bold text-[3em]">&larr;</button>
+                <button class="text-[#007AFF] font-bold text-[3em]">&rarr;</button>
+            </div>
+        </div>
+        <div class="m-auto w-[1356px] overflow-x-auto">
+
+           
+            <div class="flex m-auto space-x-4 ml-[35px] w-[2000px]">
+                <div style="background-image: url(/img/37.svg);" class="w-[252px] h-[285px] rounded-lg flex items-end p-5 ">
+                    <span>
+                        <h4 class="text-white font-bold text-[20px]">Fikry Nurzaman</h4>
+                        <p class="text-white font-normal text-[14px]">Senior Product Designer at oxinos</p>
+                    </span>
+                </div>
+
+                <div style="background-image: url(/img/Rectangle\ 38.svg);" class="w-[252px] h-[285px] rounded-lg flex items-end p-5">
+                    <span>
+                        <h4 class="text-white font-bold text-[20px]">Tantri Sander</h4>
+                        <p class="text-white font-normal text-[14px] text-nowrap">Lead Product Manager at Evermos</p>
+                    </span>
+                </div>
+
+                <div style="background-image: url(/img/39.svg);" class="w-[252px] h-[285px] rounded-lg flex items-end p-5">
+                    <span>
+                        <h4 class="text-white font-bold text-[20px]">Fahmi Fauzy</h4>
+                        <p class="text-white font-normal text-[14px]">CTO at Oxinos</p>
+                    </span>
+                </div>
+
+                <div style="background-image: url(/img/40.svg);" class="w-[252px] h-[285px] rounded-lg flex items-end p-5">
+                    <span>
+                        <h4 class="text-white font-bold text-[20px]">Farhan Muhammad</h4>
+                        <p class="text-white font-normal text-[14px]">Vice Of Product at Tokopedia</p>
+                    </span>
+                </div>
+
+                <div style="background-image: url(/img/41.svg);" class="w-[252px] h-[285px] rounded-lg flex items-end p-5 bg-no-repeat bg-cover">
+                    <span>
+                        <h4 class="text-white font-bold text-[20px]">Hana Hanifah</h4>
+                        <p class="text-white font-normal text-[14px] text-nowrap">Senior Product Manager at Evermos</p>
+                    </span>
+                </div>
+
+                <div style="background-image: url(/img/37.svg);" class="w-[252px] h-[285px] rounded-lg flex items-end p-5 ">
+                    <span>
+                        <h4 class="text-white font-bold text-[20px]">Fikry Nurzaman</h4>
+                        <p class="text-white font-normal text-[14px]">Senior Product Designer at oxinos</p>
+                    </span>
+                </div>
+
+                <div style="background-image: url(/img/40.svg);" class="w-[252px] h-[285px] rounded-lg flex items-end p-5">
+                    <span>
+                        <h4 class="text-white font-bold text-[20px]">Farhan Muhammad</h4>
+                        <p class="text-white font-normal text-[14px]">Vice Of Product at Tokopedia</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION E END -->
+        <!-- SECTION F -->
+        <div class="m-auto w-[1362px] h-[554px] mt-16">
+            <div class=" ml-[60px] w-[1250px]">
+                <h1 class="text-[#0F172A] font-bold text-[36px] mb-5">Pembelajaran Baru</h1>
+                <div class="mb-5 flex justify-between">
+                    <div>
+                        <button class="bg-[#007AFF] rounded-lg p-[10px] border border-[#007AFF] w-[180px] h-[50px] text-[18px] font-bold text-[#F8FAFC] mr-5 group hover:bg-white active:bg-[#e2e1e1]"><span class="group-hover:text-[#007AFF] ">Video Kelas</span></button>
+                        <button class="w-[180px] h-[50px] border rounded-lg p-[10px] border-[#007AFF] text-[#007AFF] font-bold text-[18px] mr-5 group hover:bg-[#007AFF] active:bg-[#0068d6]"><span class="group-hover:text-white">Artikel</span></button>
+                        <button class="w-[180px] h-[50px] border rounded-lg p-[10px] border-[#007AFF] text-[#007AFF] font-bold text-[18px]  group hover:bg-[#007AFF] active:bg-[#0068d6]"><span class="group-hover:text-white">Webinar</span></button>
+                    </div>
+                    <a href="#" class="text-[#007AFF] font-bold text-[24px] hover:text-[#504EB6]">Lihat Semua</a>
+                </div>
+            </div>
+            <div class="ml-[47px] flex justify-around w-[1370px]">
+                <div class="w-[318px] h-[398px] relative rounded-xl border bg-[#F8FAFC] border-[#F1F5F9] shadow-lg">
+                    <img src="/img/42.svg" alt="" class="absolute z-0">
+                    <div class="z-50 relative mt-[49%] px-5">
+                        <div class="flex mb-[30px] cursor-pointer"><img src="/img/Ellipse 14.svg" alt="" class="mr-1"><span class="font-medium text-[14px] text-[#F8FAFC]">Rizky Nurzaman</span></div>
+                        <div class="flex justify-between mb-3"><button class="w-[66px] h-[22px] rounded-[4px] bg-[#E2E8F0] font-normal text-[13px] text-[#007AFF]">Basic</button> <img src="/img/material-symbols_bookmark-outline.svg" alt="" class="cursor-pointer"></div>
+                        <h4 class="font-bold text-[18px] text-[#000000] mb-3  h-[53px] cursor-pointer">Fundemental UI/UX Design Mengunakan Figma</h4>
+                        <div class="flex mb-5">
+                            <div class="flex mr-5"><img src="/img/hugeicons_note.svg" alt="" class="mr-1"><span class="font-normal text-[14px] text-[#94A3B8]">12 Materi</span></div>
+                            <div class="flex"><img src="/img/carbon_time.svg" alt="" class="mr-1"><span  class="font-normal text-[14px] text-[#94A3B8]">60 Menit</span></div>
+                        </div>
+                        <a href="#" class="text-[#007AFF] font-bold text-[16px]">Gratis</a>
+                    </div>
+
+                </div>
+
+                <div class="w-[318px] h-[398px] relative rounded-xl border bg-[#F8FAFC] border-[#F1F5F9] shadow-lg">
+                    <img src="/img/43.svg" alt="" class="absolute z-0">
+                    <div class="z-50 relative mt-[49%] px-5">
+                        <div class="flex mb-[30px] cursor-pointer"><img src="/img/Ellipse 14 (1).svg" alt="" class="mr-1"><span class="font-medium text-[14px] text-[#F8FAFC] ">Amip Abdul</span></div>
+                        <div class="flex justify-between mb-3"><button class="w-[66px] h-[22px] rounded-[4px] bg-[#E2E8F0] font-normal text-[13px] text-[#007AFF]">Basic</button> <img src="/img/material-symbols_bookmark-outline.svg" alt="" class="cursor-pointer"></div>
+                        <h4 class="font-bold text-[18px] text-[#000000] mb-3  h-[53px] cursor-pointer">Fundemental Flutter developer (Mobile App)</h4>
+                        <div class="flex mb-5">
+                            <div class="flex mr-5"><img src="/img/hugeicons_note.svg" alt="" class="mr-1"><span class="font-normal text-[14px] text-[#94A3B8]">12 Materi</span></div>
+                            <div class="flex"><img src="/img/carbon_time.svg" alt="" class="mr-1"><span  class="font-normal text-[14px] text-[#94A3B8]">60 Menit</span></div>
+                        </div>
+                        <a href="#" class="text-[#007AFF] font-bold text-[16px]">Gratis</a>
+                    </div>
+
+                </div>
+
+                <div class="w-[318px] h-[398px] relative rounded-xl border bg-[#F8FAFC] border-[#F1F5F9] shadow-lg">
+                    <img src="/img/44.svg" alt="" class="absolute z-0">
+                    <div class="z-50 relative mt-[49%] px-5">
+                        <div class="flex mb-[30px] cursor-pointer"><img src="/img/Ellipse 14 (2).svg" alt="" class="mr-1"><span class="font-medium text-[14px] text-[#F8FAFC]">Fahmi Fauzy</span></div>
+                        <div class="flex justify-between mb-3"><button class="w-[66px] h-[22px] rounded-[4px] bg-[#E2E8F0] font-normal text-[13px] text-[#007AFF]">Basic</button> <img src="/img/material-symbols_bookmark-outline.svg" alt="" class="cursor-pointer"></div>
+                        <h4 class="font-bold text-[18px] text-[#000000] mb-3 h-[53px] cursor-pointer">Mengenal Software Developer</h4>
+                        <div class="flex mb-5">
+                            <div class="flex mr-5"><img src="/img/hugeicons_note.svg" alt="" class="mr-1"><span class="font-normal text-[14px] text-[#94A3B8]">12 Materi</span></div>
+                            <div class="flex"><img src="/img/carbon_time.svg" alt="" class="mr-1"><span  class="font-normal text-[14px] text-[#94A3B8]">60 Menit</span></div>
+                        </div>
+                        <a href="#" class="text-[#007AFF] font-bold text-[16px]">Gratis</a>
+                    </div>
+
+                </div>
+
+                <div class="w-[318px] h-[398px] relative rounded-xl border bg-[#F8FAFC] border-[#F1F5F9] shadow-lg">
+                    <img src="/img/45.svg" alt="" class="absolute z-0">
+                    <div class="z-50 relative mt-[49%] px-5">
+                        <div class="flex mb-[30px] cursor-pointer"><img src="/img/Ellipse 14 (3).svg" alt="" class="mr-1"><span class="font-medium text-[14px] text-[#F8FAFC]">Farhan Muhamad</span></div>
+                        <div class="flex justify-between mb-3"><button class="w-[66px] h-[22px] rounded-[4px] bg-[#E2E8F0] font-normal text-[13px] text-[#007AFF]">Basic</button> <img src="/img/material-symbols_bookmark-outline.svg" alt=""></div>
+                        <h4 class="font-bold text-[18px] text-[#000000] mb-3  h-[53px] cursor-pointer">Mengenal Product Manager</h4>
+                        <div class="flex mb-5">
+                            <div class="flex mr-5"><img src="/img/hugeicons_note.svg" alt="" class="mr-1"><span class="font-normal text-[14px] text-[#94A3B8]">12 Materi</span></div>
+                            <div class="flex"><img src="/img/carbon_time.svg" alt="" class="mr-1"><span  class="font-normal text-[14px] text-[#94A3B8]">60 Menit</span></div>
+                        </div>
+                        <a href="#" class="text-[#007AFF] font-bold text-[16px]">Gratis</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- SECTION F END -->
+        <!-- SECTION G -->
+        <div class="w-[723.73px] h-[217px] m-auto flex flex-col justify-center items-center mb-28">
+            <h1 class="text-[#007AFF] font-bold text-[36px] text-center mt-20 mb-10 ">Partner Kami</h1>
+            <div class="flex justify-evenly mb-10 w-[723.73px]">
+                <img src="/img/apple-11 1.svg" alt="">
+                <img src="/img/Group 13.svg" alt="">
+                <img src="/img/slack-2 1.svg" alt="">
+                <img src="/img/spotify-1 1.svg" alt="">
+                <img src="/img/google-2015 1.svg" alt="">
+            </div>
+            <button class="w-[262px] h-[50px] rounded-lg border border-[#007AFF] p-[10px] font-bold text-[20px] text-[#007AFF] group hover:bg-[#007AFF] active:bg-[#0068d6]"> <span class="group-hover:text-white">Semua Partner</span></button>
+        </div>
+        <!-- SECTION G END -->
+        <!-- SECTION H -->
+        <div class="w-[1106px] h-[383px] rounded-lg flex justify-between bg-[#D7FEFB] shadow-md m-auto pr-[64px] mb-20">
+            <div>
+                <img src="/img/Image.svg" alt="" class="rounded-tl-lg rounded-bl-lg">
+            </div>
+
+            <div class="w-[432px] h-[383px] pt-[100px] pb-[100px]">
+                <h4 class="text-[#111111] font-bold text-[36px] mb-5">Yu Mulai Dari Sekarang</h4>
+                <p class="font-[Inter] font-normal text-[#4D5253] text-[16px] mb-5">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
+                <button class="bg-[#007AFF] w-[172px] h-[40px] rounded-md  pr-[18px] pb[14px] pl-[18px] text-[Inter] font-semibold text-[14px] text-[#F8FAFC] group hover:bg-white active:bg-[#e2e1e1]"> <span class="group-hover:text-[#007AFF]">Gabung Sekarang</span><span class="group-hover:text-[#007AFF] font-bold"> &rightarrow;</span></button>
+            </div>
+        </div>
+        <!-- SECTION H END -->
+        <!-- FOOTER -->
+        <footer class="bg-gradient-to-r from-[#005EDA] to-[#003274] w-[100%] h-[478px] m-auto">
+            <div class="w-[1440px] h-[350px] pt-[80px] pl-[80px] m-auto flex justify-evenly pr-[90px]">
+                <div>
+                    <div class="w-[318px]">
+                        <img src="/img/Logo (1) f.svg" alt="">
+                        <p class="font-normal text-white text-[16px] font-[Roboto] mt-5 mb-3">Belajar coding dengan kurikulum industri. Ambil sertifikasi serta kesempatan kerja di berbagai perusahaan.</p>
+                        <button class="w-[200px] h-[45px] rounded-lg bg-[#F8FAFC] font-bold text-[20px] text-[#007AFF] group hover:bg-[#007AFF] active:bg-[#0068d6]"><span class="group-hover:text-white">Hubungi Kami</span></button>
+                    </div>
+                </div>
+
+                <div class="flex w-[620px] justify-between">
+                    <div class="w-[131px] h-[165px]">
+                        <h4 class="text-white font-semibold text-[20px] font-[Poppins] mb-3">GDS</h4>
+                        <ul>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Kelas</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Program</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1"> Event</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Komunitas</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Artikel</li>
+                        </ul>
+                    </div>
+    
+                    <div class="w-[119px] h-[215px]">
+                        <h4 class="text-white font-semibold text-[20px] font-[Poppins] mb-3">Layanan</h4>
+                        <ul>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Kelas</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Beasiswa</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Challenge</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Program Offline</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">SkillReward</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Webinar</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Paket</li>
+                        </ul>
+                    </div>
+    
+                    <div class="w-[278px] h-[117px]">
+                        <h4 class="text-white font-semibold text-[20px] font-[Poppins] mb-3">Bantuan dan Panduan</h4>
+                        <ul>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Syarat dan Ketentuan</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Kebijakan Privasi</li>
+                            <li class="font-[Roboto] font-normal text-[16px] text-white cursor-pointer mb-1">Bantuan</li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+            </div>
+            <div class="w-[1232px] m-auto pl-[77px]">
+                <img src="/img/Rectangle 22.svg" alt="" class="mb-3">
+                <div class="flex justify-between">
+                    <h4 class="font-[Roboto] font-normal text-[12px] text-white">© 2019-2022, PT GEBRA DIGITAL SCHOOL</h4>
+                    <div class="flex w-[140px] justify-between pr-3">
+                        <img src="/img/mdi_facebook.svg" alt="" class="cursor-pointer">
+                        <img src="/img/mdi_instagram.svg" alt="" class="cursor-pointer">
+                        <img src="/img/mdi_twitter.svg" alt="" class="cursor-pointer">
+                        <img src="/img/mdi_youtube.svg" alt="" class="cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+<script src="/src/JS/main.js"></script>
+</body>
+</html>

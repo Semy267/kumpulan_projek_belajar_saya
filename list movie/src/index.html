@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="container m-auto pt-6">
+        <h1 class="text-2xl font-bold pb-2">Movie List</h1>
+        <div class="mb-6 flex space-x-5">
+            <input type="text" placeholder="Judul" id="cari" class="search-movie">
+            <button class="rounded-lg bg-sky-600 text-white px-4 py-1 search-submit" id="submit">search</button>
+        </div>
+        
+
+        <div class="grid grid-cols-3 gap-5 movie-container">
+        </div>
+    </div>
+
+
+<!-- modal box -->
+<div class="modal-body fixed inset-0 items-center justify-center bg-gray-800 bg-opacity-50 z-50 hidden" id="modal">
+    <div class="bg-white rounded-lg shadow-lg p-6 max-w-2xl w-full">
+      <h2 class="text-xl font-semibold mb-4">Details</h2>
+      <div class="grid grid-cols-2">
+        <div class="w-full p-8"><img src="" alt="" id="img"></div>
+        <div class="">
+            <ul class="mb-20 space-y-4">
+                <li><strong>Judul:</strong> <span id="Judul"></span> <hr></li>
+                <li><strong>Director:</strong> <span id="Director"></span> <hr></li>
+                <li><strong>Actors:</strong> <span id="Actors"></span> <hr></li>
+                <li><strong>Writer:</strong> <span id="Writer"></span> <hr></li>
+                <li><strong>Plot:</strong> <br><span id="Plot"></span> <hr></li>
+            </ul>
+        </div>
+      </div>
+      <div class="flex justify-end">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded mr-2" id="closeModal">Close</button>
+      </div>
+    </div>
+</div>
+ <!-- /modal box -->
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="hidden absolute my-1 mb-1 flex-col border shadow-md p-4 w-fit invisible items-baseline justify-between">
+    `<div class="border shadow-md p-4 w-full mb-2 flex flex-col items-center">
+        <img src="${m.Poster}" alt="">
+        <div>
+            <p class="text-lg font-semibold my-1">${m.Title}</p>
+            <h2 class="text-sm text-slate-500 mb-1">${m.Year}</h2>
+            <button class="rounded bg-sky-600 p-2 text-white show-detail" data-imdbid="${m.imdbID}">Show Detail</button>
+        </div>
+
+    </div>`
+</div>
+</body>
+</html>

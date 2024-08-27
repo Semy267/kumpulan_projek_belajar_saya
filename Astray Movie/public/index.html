@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/CSS/output.css">
+
+    <style>
+      @keyframes open {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+        }
+
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes datang {
+        0%{
+          opacity: 0;
+          margin-top: 50px;
+        }
+
+        100%{
+          opacity: 1;
+          margin-top: 0;
+        }
+      }
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container m-auto">
+        <div class="p-4">
+            <h1 class="text-2xl font-bold">TRY Movies</h1>
+            <div class="mt-3">
+                <input type="text" placeholder="Judul Movie" class="w-[50%] border p-1 rounded-sm input-search">
+                <button class="bg-sky-400 hover:bg-sky-500 active:bg-sky-600 py-1 px-2 text-white rounded search-submit">Search</button>
+            </div>
+        </div>
+
+
+    <!--animasi loading  -->
+        <div class="m-auto mt-32 hidden loading-card">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="margin:auto;background:none;display:block;shape-rendering:auto"
+            width="200px"
+            height="200px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid"
+            class="stroke-sky-400 animate-spin m-auto"
+          >
+            <circle cx="50" cy="50" r="32" stroke-width="8"  stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round">
+            </circle>
+          </svg>
+
+        </div>
+    <!-- /animasi loading -->
+
+
+
+        <div class="grid grid-cols-3 gap-3 movie-cards">
+        <div class="w-full rounded shadow-xl h-full p-3 space-y-1 hidden max-w-2xl"></div>
+          <div class="animate-[datang_1s_ease_forwards]"></div>
+
+        </div>
+
+          <!-- Modal -->
+  <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden detail-box detail-open">
+    <div class="bg-white rounded-lg shadow-lg max-w-[800px] w-full p-6 animate-[open_0.2s_ease_forwards] detail-animate transition-all">
+      <div class="flex justify-between items-center pb-3">
+        <h3 class="text-xl font-semibold">Detail</h3>
+      </div>
+      <div class="detail-container">
+        <div class="flex justify-around detail-content">
+            <img src="" alt="" class="Poster">
+  
+            <table class=" bg-white border border-gray-200">
+              <tbody>
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                      <td class="py-3 px-6 text-left"><strong>Judul: </strong><span class="Judul"></span></td>
+                  </tr>
+  
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                      <td class="py-3 px-6 text-left"><strong>Genre: </strong><span class="Genre"></span></td>
+                  </tr>
+  
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                      <td class="py-3 px-6 text-left"><strong>Rated: </strong><span class="Rated"></span></td>
+                  </tr>
+  
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                      <td class="py-3 px-6 text-left"><strong>Actors: </strong><span class="Actors"></span></td>
+                  </tr>
+  
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                      <td class="py-3 px-6 text-left"><strong>Writer: </strong><span class="Writer"></span></td>
+                  </tr>
+  
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                      <td class="py-3 px-6 text-left"><strong>Plot: </strong><br><span class="Plot"></span></td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+
+      </div>
+      <div class="flex justify-end pt-4">
+        <button id="closeModalBtn" class="px-4 py-2 text-white bg-sky-400 hover:bg-sky-500 active:bg-sky-600 rounded">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+
+    <!-- animasi detail box-->
+    <div class="grid grid-cols-2 hidden detail-pulse">
+      <div class="w-[13rem] h-[20rem] bg-slate-300 animate-pulse"></div>
+
+      <div class="space-y-2">
+          <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+          <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+          <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+          <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+          <div class="w-full h-10 bg-slate-200 animate-pulse rounded"></div>
+          <div class="w-full h-20 bg-slate-200 animate-pulse rounded"></div>
+      </div>
+    </div>
+
+
+    <!-- dummy -->
+     <div class="close"></div>
+
+
+    <script src="/src/JS/main.js"></script>
+</body>
+</html>
