@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Talk Show",
+        "description": "Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.",
+        "image": "./public/Vector.svg"
+    },
+    {
+        "id": 2,
+        "title": "Seminar",
+        "description": "Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.",
+        "image": "./public/Vector (1).svg"
+    },
+    {
+        "id": 3,
+        "title": "Training",
+        "description": "Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.",
+        "image": "./public/Vector (2).svg"
+    },
+    {
+        "id": 4,
+        "title": "Workshop",
+        "description": "Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.",
+        "image": "./public/Vector (3).svg"
+    },
+    {
+        "id": 5,
+        "title": "Interaktive",
+        "description": "Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.",
+        "image": "./public/Vector (4).svg"
+    },
+    {
+        "id": 6,
+        "title": "Kelas",
+        "description": "Merupakan kegiatan yang bersifat sharing (berbagi ilmu atau pengetahuan dari buku) yang disampaikan oleh pemateri kemudian dilanjutkan tanya jawab dan diberikan contoh kasus nyata.",
+        "image": "./public/Vector (5).svg"
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "title": "Fikry Nurzaman",
+        "description": "Senior Product Designer at oxinos",
+        "image": "./public/mentor/1.svg"
+    },
+
+    {
+        "id": 2,
+        "title": "Tantri Sander",
+        "description": "Lead Product Manager at Evermos",
+        "image": "./public/mentor/2.svg"
+    },
+
+    {
+        "id": 3,
+        "title": "Fahmi Fauzy",
+        "description": "CTO at Oxinos",
+        "image": "./public/mentor/3.svg"
+    },
+
+    {
+        "id": 4,
+        "title": "Farhan Muhammad",
+        "description": "Vice Of Product at Tokopedia",
+        "image": "./public/mentor/4.svg"
+    },
+
+    {
+        "id": 5,
+        "title": "Hana Hanifah",
+        "description": "Senior Product Manager at Evermos",
+        "image": "./public/mentor/5.svg"
+    },
+
+    {
+        "id": 6,
+        "title": "Mentor1",
+        "description": "Mentor adalah oranguna",
+        "image": "./public/mentor/6.jpg"
+    },
+
+    {
+        "id": 7,
+        "title": "Mentor2",
+        "description": "karir di perusahan atau tempat kerja.",
+        "image": "./public/mentor/7.jpg"
+    },
+
+    {
+        "id": 8,
+        "title": "Mentor3",
+        "description": "Mentor yang diberi pelatihan dan berbagi ilmu.",
+        "image": "./public/mentor/8.jpg"
+    },
+
+    {
+        "id": 9,
+        "title": "Mentor4",
+        "description": "di tempat kerja.",
+        "image": "./public/mentor/9.jpg"
+    },
+
+    {
+        "id": 10,
+        "title": "Bread.",
+        "description": "Bread.",
+        "image": "./public/mentor/10.jfif"
+    }
+]
