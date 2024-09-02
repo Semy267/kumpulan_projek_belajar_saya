@@ -1,3 +1,4 @@
+import { IconArrowNarrowDown } from "@tabler/icons-react";
 import Button from "../elements/button";
 
 /* eslint-disable react/no-unescaped-entities */
@@ -11,8 +12,8 @@ export default function Header() {
                     <p className="text-lg">"Gabung dengan ribuan pelajar yang telah sukses bersama <br /> kursus online kami. Mulai belajar sekarang dan buka peluang <br /> karier yang lebih cerah!"</p>
                 </div>
                 <div className="flex justify-center space-x-4 mb-[40px]">
-                    <Button className={"bg-[#F8FAFC] font-semibold w-36 text-[#504EB6]"}>Belajar Sekarang</Button>
-                    <Button className={"bg-transparent font-semibold w-36 text-white"}>Daftar Sekarang</Button>
+                    <Button className={"bg-[#F8FAFC] font-semibold w-36 text-[#007A]"}>Belajar Sekarang</Button>
+                    <Button className={"bg-transparent font-semibold w-36 text-white flex space-x-3 justify-center items-center"}>Selengkapnya <IconArrowNarrowDown stroke={2} /></Button>
                 </div>
                 <div>
                     <img src="./public/Rectangle 37.svg" alt="" />

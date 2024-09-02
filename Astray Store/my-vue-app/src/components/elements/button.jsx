@@ -16,6 +16,6 @@ export default function Button(props) {
 
 Button.propTypes = {
     onClick: PropsType.func,
-    children: PropsType.string,
+    children: PropsType.node,
     className: PropsType.string
 }
